@@ -1,0 +1,218 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 2rem ;
+    border: 0.1rem solid rgb(86,165,235,0.5);
+    background-color: white;
+    
+   
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(28, 105, 119, 0.5);
+    transform: translateY(-0.2rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color:#56a5eb;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: rgb(28, 168, 28);
+}
+
+.incorrect {
+    background-color: #eb192e;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#question {
+    font-size:3.8rem ;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.4rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb ;
+    width:0%;
+}
+
+/* LOADER */
+#loader {
+    border: 1.4rem solid white;
+    border-radius: 50%;
+    border-top:1.4rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:960px){
+    #loader {
+        width: 12rem;
+        height: 12rem;
+    }
+    #question {
+        font-size: 3.2rem;
+    }
+    
+    .choice-container {
+        
+        margin-bottom: 0.8rem;
+        width: 80%;
+        font-size: 1.8rem ;
+        
+    }
+    .hud-main-text {
+        font-size: 3.8rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    #progressBar {
+        width: 20rem;
+        height: 3rem;
+        border: 0.1rem solid #56a5eb;
+        margin-top: 1.4rem;
+    }
+    #progressBarFull {
+        height: 2.8rem;
+
+    }
+    .hud-prefix {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .hud-main-text {
+        font-size: 3.6rem;
+    }
+
+    #question {
+        font-size: 3.2rem;
+    }
+    .choice-container {
+        
+        margin-bottom: 0.8rem;
+        width: 70%;
+        font-size: 1.6rem ;
+        
+    }
+}
+
+@media screen and (max-width:640px){
+    #loader {
+        border: 1.2rem solid white;
+        border-top:1.2rem solid #56a5eb;
+        width: 8rem;
+        height: 8rem;
+
+    }
+    #progressBar {
+        width: 16rem;
+        height: 2rem;
+        border: 0.1rem solid #56a5eb;
+        margin-top: 1.4rem;
+    }
+    #progressBarFull {
+        height: 1.8rem;
+
+    }
+    .hud-prefix {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .hud-main-text {
+        font-size: 3.6rem;
+    }
+    #question {
+        font-size: 3rem;
+    }
+
+    .choice-container {
+        
+        margin-bottom: 0.6rem;
+        width: 65%;
+        font-size: 1.4rem ;
+        
+    }
+}
+
+
+@media screen and (max-width:480px){
+    #loader {
+        border: 1.0rem solid white;
+        border-top:1.0rem solid #56a5eb;
+        width: 6rem;
+        height: 6rem;
+    }
+    #progressBar {
+        width: 14rem;
+        height: 2rem;
+        border: 0.1rem solid #56a5eb;
+        margin-top: 1.4rem;
+    }
+
+    .hud-prefix {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .hud-main-text {
+        font-size: 3.2rem;
+    }
+
+    #question {
+        font-size: 2.4rem;
+    }
+
+    .choice-container {
+        
+        margin-bottom: 0.8rem;
+        width: 80%;
+        font-size: 1.4rem ;
+        
+    }
+}

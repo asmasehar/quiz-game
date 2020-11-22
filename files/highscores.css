@@ -1,0 +1,57 @@
+#highScoresList {
+   /*list-style: none; */
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.high-score {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+   
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+}
+
+#finalScore{
+    text-decoration: underline;
+}
+
+
+#go {
+        font-size: 1.6rem;
+        padding: 1.2rem 0;
+        width:25%;
+        margin-top: 16px;
+}
+
+/* RESPONSIVE DESIGN */
+
+
+@media screen and (max-width:960px){
+    .high-score {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+    .high-score {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:640px){
+    .high-score {
+        font-size: 2.0rem;
+        
+    }
+}
+
+@media screen and (max-width:480px){
+    .high-score {
+        font-size: 1.8rem;
+    }
+}
